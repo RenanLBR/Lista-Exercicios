@@ -1,0 +1,28 @@
+Program exericio5 ;
+var ano1, ano2, idade, a, b:integer;
+mais1, mais2:string;
+Begin
+writeln('escreva o seu ano de nas:');
+readln(ano1);
+ano2:=2018;
+begin
+idade:=ano2-ano1;
+writeln('idade:', idade);
+end;
+a:=16;
+b:=18;
+if (idade>=a) then
+writeln('pode votar')
+else
+writeln('n�o pode votar');	
+if (idade>=b) then
+writeln('pode tirar carteira')
+else
+writeln('n�o pode tirar carteira');
+
+
+
+
+
+  
+End.
