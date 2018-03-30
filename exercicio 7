@@ -1,0 +1,35 @@
+Program Pzim ;
+//7) FUP que utilizando o IMC (�ndice de Massa Corporal) = peso/altura2, leia o peso e a altura de um adulto,
+{mostre a sua condi��o segundo a tabela abaixo:
+IMC em adultos Condi��o
+Abaixo de 18,5 Abaixo do peso
+Acima de 18,5 e 25 Peso normal
+Acima de 25 e 30 Acima do peso
+Acima de 30 Obeso}
+var 	peso, altura, res : real; 
+Begin
+writeln ('digite seu peso=');
+readln (peso);
+writeln ('digite sua altura=');
+readln (altura);
+res:=peso/(altura*altura);
+writeln('seu IMC �=', res:2:4);
+begin
+if (res < 18.5) then
+writeln('Abaixo do peso')
+else
+if (res < 25) then
+writeln('Peso normal')
+else
+if (res < 30) then
+writeln ('Acima do peso')
+else
+if (res > 30) then
+writeln ('OBESO')
+else
+writeln('error anta');
+end;
+writeln('enter para encerrar');
+readln;
+  
+End.
