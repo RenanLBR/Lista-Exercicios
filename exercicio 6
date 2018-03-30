@@ -1,0 +1,36 @@
+Program exercicio6 ;
+{FUP que leia dois n�meros e a opera��o aritm�tica desejada (+, �, *, /). 
+Ap�s a leitura (LEIA N1, N2,OP) calcule e mostre a resposta da opera��o realizada.}
+var num1, num2: integer;
+resultado: real;
+OP : string;
+Begin
+writeln('escreva o primeiro numero=');
+readln(num1);
+writeln('escreva o segundo numero=');
+readln(num2);
+writeln('escreva a opera��o desejada=');
+readln(OP);
+begin
+if (op = '+') then
+resultado:= num1 + num2
+else
+if (op = '-') then
+resultado:= num1 - num2
+else
+if (op = '*') then
+resultado:= num1 * num2;
+if (op = '/') then
+resultado:= num1 / num2
+else
+writeln ('error');
+end;
+
+
+
+writeln (num1:6:2,' ',op,' ',num2:6:2,' =', resultado:6:2);
+
+
+
+  
+End.
