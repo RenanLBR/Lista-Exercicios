@@ -1,0 +1,43 @@
+Program L3;
+//3 fup leia tres numeros e mostre-os em ordem decrescente
+var na, nb, nc, a,b,c:integer;
+Begin
+write('digite tres numeros=');
+readln (na, nb, nc);
+if (na>nb) then
+begin{2}
+//se for verdade o primeiro valor a assmue na e o segundo valor b assume o valor nb)
+a:=na;
+b:=nb;
+end{2}
+else
+begin{3}
+//se for falso o primeiro valor A assume nb e ...)
+a:=nb;
+b:=na;
+end{3};
+//seu neste ponto o maior entre na e nb (salvo em a e b)
+//verificar o valor de nc em relacao  ao  a 
+if (nc>a) then
+begin
+c:=b;
+b:=a;
+a:=nc;
+end
+else
+if(nc>b) then
+begin
+c:=b;
+b:=nc;
+//c vai para a segunda posicao
+//b vai para a ultima posicao no valor assossiano a nc
+end
+else 
+c:=nc;
+writeln(a:5,'---',b:5,'---',c:5);
+writeln ('ENTER PARA ENCERRAR');
+
+
+
+  
+End.
