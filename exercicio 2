@@ -1,0 +1,27 @@
+Program exercicio2 ;
+var pre:real;
+cod:integer;
+Begin       
+write('digite o preco=');
+readln(pre);
+write ('digite o codigo=');
+readln(cod);
+if( cod =1 ) then
+writeln('preco=', pre:10:2, 'veio do sul')
+else
+if ( cod > 1) and (cod <5) then
+writeln ('preco=', pre:10:2, 'veio do norte')
+else
+if (cod > 4) and ( cod < 10) then
+writeln ('preco=', pre:10:2, 'veio do sudeste')
+else
+if (cod>9) and (cod<14) then 
+writeln('preco=',pre:10:2,'veio do nordeste')
+else
+if (cod >= 14) then 
+writeln('prec=',pre:10:2,'veio outra regiao')
+else
+writeln('preco=',pre:10:2,'importado');
+write ('ENTER PARA ENCERRAR');
+//posso fazer considerando somente o maior limite, pois o programa ja tera passado pelos numeros menores em outras sequencias.
+End.
