@@ -1,0 +1,45 @@
+Program numero4 ;
+//FUP que leia tr�s nomes MAX 30 CARACTERES, e mostre-os em ordem alfab�tica
+var nome1, nome2, nome3: string;
+a, b, c: string;
+Begin
+writeln ('escreva tr�s nomes=');
+readln (nome1, nome2, nome3);
+if (nome1 < nome2) then
+BEGIN{2}
+a:=nome1;
+b:=nome2;
+END{2} 
+ELSE 
+BEGIN{3}
+a:=nome2;
+b:=nome1;
+END{3};
+if (nome3 < a)then
+begin{4}
+c:=b;  //se aquilo for verdade salvo aquele q ta na segundaposi(b) na tercieraposi(c).
+b:=a;  //se aquilo for verdade salvo aquele q ta na primeiraposi(a) na segundaposi(b).
+a:=nome3; //se aquilo for verdade entsao coloco o nome 3 na primeiraposi(a).
+end{4}
+else
+if (nome3 < b)then  //se aquilo for verdade nome 3 tem q assumir o lugar de b.
+begin{5}
+c:=b;
+b:=nome3;
+end{5}
+else
+c:=nome3;
+writeln(a,'---', b,'---',c);
+
+writeln('ENTER PARA ENCERRAR');
+//duvida onde eu escrevo 'MAX 30 CARACTERES'???
+
+
+
+
+
+
+
+
+
+End.
