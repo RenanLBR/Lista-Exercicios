@@ -1,0 +1,15 @@
+Program ex8p2 ; //usando repeat.
+var a: integer;
+Begin
+repeat 
+a:=a+1; // no come�o era 0 pois ao atribuir a variavel, o seu respectivo endere�o, na matriz principal, fica com o valor 0
+write(a:4);
+until(a=10); //ferramenta de stop, executar� o comando at� chegar a 10.
+writeln;
+
+writeln ('enter para encerrar');
+readln;
+
+
+  
+End.
