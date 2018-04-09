@@ -1,0 +1,18 @@
+Program Pzim ;
+var a, n, som: integer;
+Begin // sei que um numero e divisivel por outro quando o resto da sua divisao eh = a zero.
+for n:= 1 to 500 do
+if (n mod 2<>0) and (n mod 3=0) then
+som:=som+n;
+writeln(som:6,' =soma (para for)');
+a:=3;
+som:=0;
+repeat
+som:= som+a; 
+a:=a+6; //somar um numero par  a um impar sempre da impar, eu pulei os numeros pares da tabuada do 3 somando 6 a cada vez.
+until(a>=500);
+writeln(som:6,' =soma (para repeat)');
+
+ 
+readln;
+End.
