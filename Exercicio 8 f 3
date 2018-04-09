@@ -1,0 +1,10 @@
+Program Pzim ;
+var a: integer;
+Begin
+   while(a<10) do //enquanto verdade continua, contrário do repeat.
+   begin
+   a:=a+1;
+   write(a:4);
+   end;
+   writeln
+End.
