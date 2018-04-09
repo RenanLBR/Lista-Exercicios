@@ -1,0 +1,17 @@
+Program Pzim ;
+var nl, c, r: integer;
+Begin
+for nl:=1 to 10 do
+begin{2}
+clrscr;//limpa a tela
+writeln('tabuada do ',nl:3);
+for c:=1 to 10 do
+begin{3}
+r:= NL*C;
+writeln(nl:3,' x', c:3,' =',r:4);
+end {3};
+readln;
+end{2};
+readln;
+        
+End.
