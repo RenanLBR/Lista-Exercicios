@@ -1,0 +1,13 @@
+Program Pzim ;
+var num, som: integer;
+Begin
+while (num<11) do
+begin
+som:= som+ num;
+num:= num+1;
+write(' soma = ', som:4);
+end;
+write('enter para encerrar');
+readln;
+  
+End.
