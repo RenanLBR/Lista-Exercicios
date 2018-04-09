@@ -1,0 +1,28 @@
+Program Pzim ;
+{19) FUP que leia uma série de alturas de pessoas, encerrada por uma altura negativa. Antes de terminar o
+programa mostrar: a maior e a menor altura lida.}
+var altura, altura1, altura2, c: real;
+
+Begin
+repeat
+writeln('Digite uma altura = ');
+readln(altura);
+if altura < 0 then
+break;
+if c=0 then //??
+begin   //?
+ 	altura1:=altura;
+ 	altura2:=altura;
+ 	c:=1; //?
+ 	continue;
+end;
+if altura>altura1 then  //atribuir o valor da maior alutra a altura 1
+ altura1:=altura;
+if altura<altura2 then  //atribuir o menor valor digitado da variavel altura a outra variavel altura 2( que estara na conta)
+ altura2:=altura;
+ until (altura < 0);
+writeln ('Maior altura: ',altura1:3:4,', Menor altura: ',altura2:3:4);
+
+
+  
+End.
