@@ -1,0 +1,46 @@
+Program Lista16 ;
+{FUP para apurar o resultado de uma eleição entre três candidatos (A, B, C). A entrada é encerrada
+quando for lido o caractere *. Votos válidos: entrada A, B ou C, votos em um dos candidatos. “Espaço”,
+considerar voto em branco. Qualquer outro caractere de entrada considerar voto inválido. Antes de
+encerrar o programa, calcular a porcentagem de votos para cada candidato, porcentagem de votos (votos/totalvotos)x100.}
+var A, B, C, branco, inv, total{faltou} :integer;
+pora, porb, porc, porbr ,porinv:real;  //faltou 
+voto:string[5]; //faltou numerar string     
+Begin
+repeat //faltou
+ write('PLIX VOTE NO CANDIDATO A OU B OU C OU ESPACO PRA BRANCO E APERTE ESTERISCO(*) PARA COMPUTAR= ');
+ readln (voto); 
+  if (voto='a') then //(faltou colocar A como caractere) ler caractere ' ' e dps atribui-lo a sua respectiva variavel.
+   A:=A+1
+  else
+    if (voto='b') then
+     B:=B+1
+    else
+      if (voto='c') then
+       C:=C+1
+      else
+         if (voto=' ') then
+          branco:=branco+1
+         else
+            if (voto='*') then
+              break //pare
+              else
+                inv:=inv+1 ;
+                clrscr;
+
+   total:=total+1; 
+ until voto='*'; //agr atribuir as porncetagens
+ pora:=(A/total)*100;
+ porb:=(B/total)*100;
+ porc:=(C/total)*100;
+ porbr:=(Branco/total)*100;
+ porinv:=(inv/total)*100; //agr mostrar as porcentagens.
+ writeln('Total de votos A: ',a,' - ',pora:5:2,'%');
+ writeln('Total de votos B: ',b,' - ',porb:5:2,'%');
+ writeln('Total de votos C: ',c,' - ',porc:5:2,'%');
+ writeln('Total de votos Brancos: ',branco,' - ',porbr:5:2,'%');
+ writeln('Total de votos invalidos: ',inv,' - ',porinv:5:2,'%');
+ writeln('Total de votos: ',total);
+ 
+  
+End.
