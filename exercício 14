@@ -1,0 +1,24 @@
+Program Pzim ;
+//14) leia serie de notas.
+var c,nl,soma:integer;
+med:real;
+Begin //use o while, for nao pq eu n sei o total de soma, e nao repeat pq n pode somar negativo.
+write('digite a nota:');
+readln(nl);
+while (nl>=0) do
+begin{2}
+c:=c+1;
+soma:=soma+nl;
+write(' digite a nota:');
+readln(nl);
+end{2};
+if (c<>0) then
+begin{3}
+med:=soma/c;
+writeln('notas lida=', c:5);
+writeln('media =' , med:5:2)
+end{3}
+else 
+writeln(' nada foi lido .......');
+  
+End.
