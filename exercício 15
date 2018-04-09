@@ -1,0 +1,22 @@
+Program Pzim ;
+var c, ni, nl: integer;
+Begin
+writeln('numero imaginário=');
+readln(ni);
+clrscr;
+repeat
+readln(nl);
+c:=c+1;
+writeln('chute um numero=');
+if(nl>ni) then
+writeln('alto')
+else
+if (nl<ni) then
+writeln('baixo')
+else
+writeln('ACERTOU');
+UNTIL (ni=nl);
+writeln(' em ', c:5, ' chutes');
+readln;
+  
+End.
