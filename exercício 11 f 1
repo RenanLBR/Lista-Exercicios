@@ -1,0 +1,11 @@
+Program Pzim ;
+var soma, num: integer;
+Begin
+for num:=1 to 10 do
+soma:=soma+num;
+writeln('soma =', soma:5,' usando for');
+readln;
+
+
+  
+End.
