@@ -1,0 +1,18 @@
+Program Pzim ;
+var m,s:integer;
+Begin
+writeln('10:00');
+for m:=9 downto 0 do
+begin
+delay(1000);
+ for s:=59 downto 0 do
+ begin
+ clrscr;
+  delay(1000);
+
+  writeln(m:2,':', s:2);
+  end ;
+  end;
+readln;
+  
+End.
