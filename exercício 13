@@ -1,0 +1,19 @@
+Program Pzim ;
+//13) calcule a media de 50 notas.
+var nl, som, c: integer ;
+med:real;
+Begin
+while c<>50 do
+begin{2}
+c:= c+1;
+write('digite A ', c:2,'. Nota=');
+readln(nl);0
+
+
+som:=som+nl;
+end{2};
+med:=som/c;
+writeln('media=;', med:7:2);
+readln;
+  
+End.
