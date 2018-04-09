@@ -1,0 +1,15 @@
+Program Pzim ;
+//FUP que leia um numero maior q 0 e menor q 11, se o numero for 5 ele tem q fazer 5x1,5x2,5x3... ate o 10.
+var c, r, nl: integer;
+Begin
+repeat //validação, ate acertar ele n fechaa.
+write('digite um valor entre 1 e 10= ');
+readln(nl);
+until (nl>0) and (nl<11);
+for c:=1 to 10 do 
+begin
+r:=nl*c;
+writeln(nl:3,' x', c:3,' =', r:4);
+end
+  
+End.
