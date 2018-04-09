@@ -1,0 +1,13 @@
+Program Pzim ;
+var c, som, nl:integer;
+Begin
+repeat
+write('digite o num=',c:2,'. Num=');
+readln(nl);
+som:=som+nl;
+c:=c+1;
+until(c=10);
+writeln(som:5,' = soma... REPEAT');
+readln;
+  
+End.
